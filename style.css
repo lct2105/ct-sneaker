@@ -1,0 +1,832 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/Poppins.ttf');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sticky-wrapper {
+    position: absolute;
+    height: 80px;
+    top: 40px;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+}
+
+.main_menu {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease 0s;
+    z-index: 99;
+}
+
+.lct_navbar {
+    background: #fff;
+    max-width: 1200px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 auto;
+    padding: 10px;
+    border: 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+}
+
+.is-sticky .lct_navbar {
+    max-width: 100%;
+}
+
+.lct_navbar .container {
+    max-width: 1200px;
+}
+
+
+.banner-area {
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.features-inner {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px 0;
+}
+
+.single-features {
+    text-align: center;
+    border-right: 1px solid #eeeeee;
+    padding: 0 10px;
+}
+
+.single-features .f-icon {
+    margin-bottom: 20px;
+}
+
+.single-features h6 {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.single-features p {
+    font-size: 14px;
+    color: #78827e;
+}
+
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #38B6FF;
+}
+
+.banner-area .container {
+    max-width: 1140px;
+}
+
+.banner-area .banner-content {
+    padding-left: 10px;
+}
+
+.banner-area .banner-content h1 {
+    font-size: 60px;
+    line-height: 66px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.add-bag {
+    margin-top: 30px;
+}
+
+.add-bag .add-btn {
+    height: 50px;
+    width: 50px;
+    line-height: 52px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 162, 255, 0.2);
+    background: #38B6FF;
+    color: white;
+}
+
+.add-bag .add-text {
+    padding-left: 15px;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #222222;
+}
+
+.best-seller-area {
+    margin-top: 100px;
+    position: relative;
+}
+
+.best-seller-area h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.best-seller-area .owl-stage-outer {
+    padding: 50px 0;
+}
+
+.best-seller-area .sneaker-box {
+    position: relative;
+    border-radius: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.best-seller-area .sneaker-box img {
+    padding: 20px;
+}
+
+.best-seller-area .sneaker-box .sneaker-price {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    font-weight: 900;
+    bottom: -10px;
+    width: 100%;
+    text-align: center;
+    color: #38B6FF;
+    transition: all 0.3s ease 0s;
+}
+
+.best-seller-area .sneaker-box .sneaker-brand {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 900;
+    bottom: 15px;
+    transition: all 0.3s ease 0s;
+}
+
+.best-seller-area .sneaker-box .sneaker-review {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-weight: 900;
+}
+
+.sneaker-review .buys-count {
+    color: #4bdb80;
+    margin-right: 10px;
+}
+
+.sneaker-review .likes-count {
+    color: #fc6284;
+}
+
+.best-seller-area .sneaker-box:hover {
+    border: 2px solid #38B6FF;
+}
+
+.customNavigation a {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+    box-shadow: -2px 1px 10px #bdbdbd;
+    top: calc(50% - 20px);
+    cursor: pointer;
+    color: black;
+}
+
+.customNavigation .prev {
+    left: 50px;
+}
+
+.customNavigation .next {
+    right: 50px;
+}
+
+.top-branding-area img {
+    width: 75%;
+}
+
+.top-branding-area {
+    margin-top: 80px;
+    filter: grayscale(1);
+}
+
+.brand-items {
+    text-align: center;
+}
+
+.hot-deals-area {
+    margin-top: 80px;
+    color: white;
+}
+
+.hot-deals-area h1 {
+    text-align: center;
+    font-weight: 900;
+}
+
+.clock-builder-output {
+    display: flex;
+    justify-content: center;
+}
+
+.hot-deals-banner {
+    background-image: url(./img/hot-deals-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.san-sale-btn {
+    margin-top: 40px;
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+    width: 225px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 900;
+}
+
+.san-sale-btn:hover {
+    background-position: right center;
+    background-size: 200% auto;
+}
+
+.footer-area {
+    margin-top: 80px;
+    padding: 100px 0;
+    background-color: #222222;
+    color: #777777;
+}
+
+
+.news-area {
+    margin-top: 80px;
+}
+
+.news-area h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.news-area .news-items {
+    margin-top: 60px;
+}
+
+.news-area .news-item-big {
+    position: relative;
+    padding: 20px;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 40px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.news-area .news-item-big img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
+.news-area .news-item-big:hover img {
+    transform: scale(1.2);
+}
+
+.news-area .news-item-masks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #22222262;
+}
+
+.news-area .news-item-big > p {
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    color: white;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.news-item-small img {
+    width: 100%;
+}
+
+.news-area .news-item-small {
+    position: relative;
+    border-radius: 40px;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.news-area .news-item-small img {
+    width: 100%;
+    border-radius: 40px;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
+.news-area .news-item-small p {
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    color: white;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+
+.news-area .news-item-small:hover img {
+    transform: scale(1.2);
+}
+
+.news-items .row {
+    margin: 20px 0;
+}
+
+.footer-social a {
+    padding-right: 25px;
+    font-size: 36px;
+}
+
+.shop-area {
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+    position: relative;
+    background-color: #fff;
+}
+
+.options_menu {
+    margin-top: 45px;
+    height: 100%;
+    font-weight: 600;
+    margin: 0 auto;
+    padding: 20px;
+    transition: all 0.3s ease 0s;
+    border-right: 1px solid #eeeeee;
+}
+
+.product-area {
+    padding: 60px;
+    border-radius: 40px;
+}
+
+.product-area .sneaker-card {
+    position: relative;
+    width: 30%;
+    margin: 10px;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.product-area .sneaker-card img{
+    width: 100%;
+    padding: 40px;
+
+}
+
+.product-area .sneaker-card .sneaker-price {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    font-weight: 900;
+    bottom: -10px;
+    width: 100%;
+    text-align: center;
+    color: #38B6FF;
+    transition: all 0.3s ease 0s;
+}
+
+.product-area .sneaker-card .sneaker-brand {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 900;
+    bottom: 15px;
+    transition: all 0.3s ease 0s;
+}
+
+.page-area {
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.page-area>* {
+    width: auto;
+}
+
+.page-area a{
+    color: #38B6FF;
+    text-decoration: none;
+}
+
+.page-area .page-active {
+    font-weight: 900;
+    color: #0400ff;
+}
+
+.btn-group {
+    padding-bottom: 1rem;
+}
+
+.btn-group label {
+    color: black;
+}
+
+.btn-outline-primary {
+    border: 2px solid black;
+}
+
+.btn-brands-group img{
+    width: 100%;
+}
+
+.btn-price-range {
+    width: 50%;
+    color: white;
+    background-color: #38B6FF;
+    margin: 10px auto;
+}
+
+.btn-price-range:hover {
+    color: white;
+    background-color: #388eff;
+}
+
+.price-range-label {
+    margin-top: 10px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.sneaker-buttons {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.sneaker-buttons i {
+    background-color: #e5e5e5;
+    margin: 0 2px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sneaker-buttons .like-buttons:hover {
+    color: #fc6284;
+}
+
+.sneaker-buttons .is-liked {
+    background-color: #fc6284;
+    color: white;
+}
+
+.sneaker-buttons .cart-buttons:hover {
+    color: #4bdb80;
+}
+
+#priceRange {
+    accent-color: #38B6FF;
+    margin-left: 15px;
+    margin-bottom: 1rem;
+}
+
+.btn-options {
+    background-color: #38B6FF;
+    color: white;
+    font-weight: 900;
+}
+
+
+.product-details-area {
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+    position: relative;
+    background-color: #fff;
+}
+
+.product-main-img {
+    width: 75%;
+    margin: 40px 0;
+    height: auto;
+}
+
+.product-main-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-other-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-other-img img {
+    width: 100%;
+}
+
+.product-details-area .sneaker-info {
+    padding: 20px;
+}
+
+.sneaker-info .sneaker-name {
+    font-weight: 900;
+}
+
+.sneaker-info .sneaker-reviews {
+    display: flex;
+}
+
+.sneaker-info .sneaker-reviews p {
+    padding: 0 10px;
+    margin-bottom: 10px;
+    border-right: 1px solid #78827e;
+}
+
+.sneaker-info p {
+    font-weight: 900;
+}
+
+
+
+.sneaker-info .sneaker-price {
+    padding: 15px 20px;
+    background: #ededed;
+    color: #5dc1fb;
+    font-weight: 900;
+}
+
+.sneaker-info .sneaker-description {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background: #ededed;
+}
+
+.sneaker-info .sneaker-amount .input-group {
+    width: 30%;
+}
+
+.sneaker-info .sneaker-amount .input-group input[name="quantity"] {
+    text-align: center;
+}
+
+.sneaker-info .sneaker-amount .input-group button {
+    border: 1px solid rgba(0,0,0,.09);
+}
+
+.btn-addcart {
+    margin-top: 20px;
+    background-color: #38B6FF;
+    color: white;
+    font-weight: 900;
+}
+
+.comments-title {
+    margin-top: 48px;
+    padding: 15px 20px;
+    background: #fafafa;
+    font-weight: 900;
+}
+
+.comment {
+    padding: 20px;
+}
+
+.comment .user-top {
+    display: flex;
+}
+
+.comment .user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 999px;
+}
+
+.comment .user-top .user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.comment .user-info .user-name {
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.comment .comment-description {
+    margin-top: -10px;
+    margin-left: 90px;
+    background: #fafafa;
+    padding: 10px;
+}
+
+.comment .comment-description p{
+    margin-bottom: 0;
+}
+
+.btn-outline-primary {
+    --bs-btn-active-bg: #38B6FF;
+    border-color: #38B6FF;
+}
+
+.sneaker-card:hover {
+    border: 2px solid #38B6FF;
+}
+
+.sneaker-color img {
+    width: 50%;
+    height: auto;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.nav-right li a{
+    margin: 0 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.nav-right li a:hover {
+    color: #5dc1fb;
+}
+
+.login_form_inner {
+    height: 100%;
+    text-align: center;
+    padding-top: 115px;
+}
+
+.login_form_inner h3 {
+    color: #222222;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.login_form_inner .login_form {
+    max-width: 385px;
+    margin: auto;
+}
+
+.login_form_inner .form-group {
+    margin-bottom: 1rem;
+}
+
+.login_form .form-group input {
+    height: 54px;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    border-radius: 0px;
+    outline: none;
+    box-shadow: none;
+}
+
+.login_form .creat_account {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.login_form .creat_account input {
+    height: auto;
+    margin-right: 10px;
+}
+
+.login_form .form-group .primary-btn {
+    display: block;
+    border-radius: 0px;
+    line-height: 38px;
+    width: 100%;
+    text-transform: uppercase;
+    border: none;
+    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    border-radius: 10px;
+    font-weight: 900;
+    color: white;
+}
+
+.login_form .form-group .primary-btn:hover {
+    background-position: right center;
+    background-size: 200% auto;
+}
+
+.login_form .form-group a {
+    font-size: 14px;
+    color: #777777;
+    font-family: "Roboto", sans-serif;
+    margin-top: 20px;
+    display: block;
+}
+
+.banner-register {
+    position: relative;
+}
+.banner-register img {
+    width: 100%;
+
+}
+.banner-register::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: #000;
+    opacity: .5;
+}
+
+.banner-register .hover {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.banner-register h4{
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.banner-register p {
+    max-width: 380px;
+    margin: 0px auto 25px;
+    color: #fff;
+}
+
+.banner-register .hover .primary-btn {
+    display: block;
+    text-decoration: none;
+    border-radius: 0px;
+    line-height: 38px;
+    width: 50%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    border: none;
+    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    border-radius: 10px;
+    font-weight: 900;
+    color: white;
+}
+
+.banner-register .hover .primary-btn:hover {
+    background-position: right center;
+    background-size: 200% auto;
+}

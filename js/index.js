@@ -2,9 +2,11 @@ window.addEventListener("scroll", function () {
     if ($(this).scrollTop() > 0) {
         $(".sticky-wrapper").addClass("is-sticky");
         $(".main_menu").css("position", "fixed");
+        $(".back-to-top").css("display", "flex")
     } else {
         $(".sticky-wrapper").removeClass("is-sticky");
         $(".main_menu").css("position", "absolute");
+        $(".back-to-top").css("display", "none")
     }
 })
 
@@ -29,7 +31,7 @@ $(document).ready(function () {
         responsive: {
             0: {
                 items: 1
-            }, 
+            },
             768: {
                 items: 4,
             }
@@ -133,7 +135,7 @@ $(document).ready(function () {
             let imgtodrag = $(button).closest('.sneaker-card').find("img");
             console.log(imgtodrag)
             if (imgtodrag.length) {
-                let cart = $(".nav-right .fa-cart-shopping"); 
+                let cart = $(".nav-right .fa-cart-shopping");
                 let imgclone = imgtodrag.clone()
                     .offset({
                         top: imgtodrag.offset().top,
@@ -169,4 +171,35 @@ $(document).ready(function () {
             }
         });
     });
+
+    // Toggle chat box
+    $('#chat-box-toggle').click(function () {
+        $('.chat-box').slideToggle();
+    });
+
+    const sendChat = (message, className) => {
+        const chatMessage = document.createElement("li")
+        chatMessage.classList.add("chat", className)
+        let chatContent = className === "outgoing" ? `<p>${message}</p>` : `<i class="fa-solid fa-headset"></i>
+        <p>${message}</p>`
+        chatMessage.innerHTML = chatContent
+        return chatMessage
+    }
+
+    $("#send-chat").click(function () {
+        let userMessage = $(".chat-input textarea").val().trim()
+        if (!userMessage) return;
+        $(".chat-box-content").append(sendChat(userMessage, "outgoing"))
+        $('.chat-input textarea').val('');
+    })
+
+    $(".chat-input textarea").keypress(function (event) {
+        if (event.which === 13) {
+            event.preventDefault();
+            let userMessage = $(".chat-input textarea").val().trim()
+            if (!userMessage) return;
+            $(".chat-box-content").append(sendChat(userMessage, "outgoing"))
+            $('.chat-input textarea').val('');
+        }
+    })
 });

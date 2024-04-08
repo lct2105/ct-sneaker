@@ -28,7 +28,7 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">TRANG CHỦ</a>
+                <a class="nav-link" aria-current="page" href="./index.html">TRANG CHỦ</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./shop/shop.html">CỬA HÀNG</a>
@@ -54,20 +54,14 @@
               <li class="nav-item mobile-nav">
                 <a class="nav-link" href="./cart.html">GIỎ HÀNG</a>
               </li>
-              <li class="nav-item" style="display: none;">
-                <a class="nav-link" href="./login.html" class="mobile-nav">ĐĂNG NHẬP</a>
-              </li>
-              <li class="nav-item" style="display: none;">
-                <a class="nav-link" href="./cart.html">GIỎ HÀNG</a>
-              </li>
             </ul>
             <ul class="nav-right">
               <li>
-                <a href="#" style="color: #38B6FF"><i class="fa-solid fa-user"></i></a>
+                <a href="./login.html"><i class="fa-solid fa-user"></i></a>
               </li>
               <li>
-                <a href="../cart.html" class="nav-cart"><i class="fa-solid fa-cart-shopping"></i>
-                <span id="product_count">1</span></a>
+                <a href="../cart.html" style="color: #38B6FF" class="nav-cart"><i class="fa-solid fa-cart-shopping"></i>
+                  <span id="product_count">1</span></a>
               </li>
             </ul>
           </div>
@@ -76,48 +70,84 @@
     </div>
   </div>
 
-  <div class="login-area">
+  <div class="cart-area">
     <div class="container">
       <div class="row justify-content-center align-items-center">
-        <div class="row" style="margin-top: 160px;background-color: #fff;box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); padding: 0;">
-          <div class="col-lg-6">
-            <div class="login_form_inner">
-              <img src="./img/logo-horizontal.png" style="margin-bottom: 40px;"alt="">
-              <h3>Vui lòng đăng nhập</h3>
-              <form class="row login_form" action="./index.html" id="contactForm"
-                novalidate="novalidate">
-                <div class="col-md-12 form-group">
-                  <input type="text" class="form-control" placeholder="Tài khoản">
-                </div>
-                <div class="col-md-12 form-group">
-                  <input type="password" class="form-control" placeholder="Mật khẩu">
-                </div>
-                <div class="col-md-12 form-group">
-                  <div class="creat_account">
-                    <input type="checkbox" id="f-option2" name="selector">
-                    <label for="f-option2">Nhớ mật khẩu</label>
-                  </div>
-                </div>
-                <div class="col-md-12 form-group">
-                  <button type="submit" value="submit" class="primary-btn">Đăng Nhập</button>
-                  <a href="#">Quên mật khẩu?</a>
-                </div>
-              </form>
+        <div class="row"
+          style="margin-top: 160px;background-color: #fff;box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); padding: 0;">
+          <div class="col-lg-7">
+            <h3 style="padding: 20px;">GIỎ HÀNG CỦA BẠN (2)</h3>
+            <div class="row cart-items align-items-center">
+              <img src="./img/sneaker/adidas_adifomq.png" alt="" id="sneaker_cart_1">
+              <div class="cart-items-info" style="width: 50%;">
+                <p style="font-weight: 900; font-size: 24px;">Adidas AdiFOM Q</p>
+                <p style="font-weight: 900;">Màu sắc: Trắng</p>
+                <p style="font-weight: 900;">Kích cỡ: 36</p>
+                <p style="font-weight: 900; margin-top: 10px;">Số lượng: 1</p>
+                <p class="sneaker-price">1.800.000 VNĐ</p>
+              </div>
+
+            </div>
+
+            <div class="row cart-items align-items-center">
+              <img src="./img/sneaker/adidas_adifomq.png" alt="" id="sneaker_cart_1">
+              <div class="cart-items-info" style="width: 50%;">
+                <p style="font-weight: 900; font-size: 24px;">Adidas AdiFOM Q</p>
+                <p style="font-weight: 900;">Màu sắc: Trắng</p>
+                <p style="font-weight: 900;">Kích cỡ: 36</p>
+                <p style="font-weight: 900; margin-top: 10px;">Số lượng: 1</p>
+                <p class="sneaker-price">1.800.000 VNĐ</p>
+              </div>
+
             </div>
           </div>
-          <div class="col-lg-6" style="padding: 0">
-            <div class="banner-register">
-              <img src="./img/register-banner.png" alt="">
-              <div class="hover">
-                <h4>Khách hàng mới?</h4>
-                <p>Hãy tạo tài khoản và bắt đầu quá trình mua sắm của bạn.</p>
-                <a class="primary-btn" href="#">Đăng Ký</a>
-                </div>
+          <div class="col-lg-5"
+            style="font-weight: 900; border-left: 0.5px solid grey; padding: 0 20px; padding-bottom: 40px; text-align: center;">
+            <h3 style="padding: 20px;">THÔNG TIN THANH TOÁN</h3>
+            <form class="row align-items-center justify-content-center"
+              style="margin-top: 40px; padding-bottom: 20px;border-bottom:  0.5px solid grey;">
+              <div class="col-auto">
+                <label for="inputCode" style="">MÃ GIẢM GIÁ</label>
+              </div>
+              <div class="col-auto">
+                <input type="password" class="form-control" id="inputCode" placeholder="CODE">
+              </div>
+              <div class="col-auto">
+                <button type="submit" class="btn btn-primary">NHẬP</button>
+              </div>
+            </form>
+            <div class="bill-info" style="text-align:left; margin-top: 20px; border-bottom: 0.5px solid grey;">
+              <div class="row justify-content-between">
+                <p style="width: 70%;">TỔNG TIỀN HÀNG:</p>
+                <p style="width: 30%; text-align: right;">3.600.000 VNĐ</p>
+              </div>
+              <div class="row justify-content-between">
+                <p style="width: 70%;">PHÍ VẬN CHUYỂN:</p>
+                <p style="width: 30%; text-align: right;">0 VNĐ</p>
+              </div>
+              <div class="row justify-content-between">
+                <p style="width: 70%;">GIẢM GIÁ:</p>
+                <p style="width: 30%; text-align: right;">0 VNĐ</p>
+              </div>
+              <div class="row justify-content-between">
+                <p style="width: 70%;">THUẾ:</p>
+                <p style="width: 30%; text-align: right;">0 VNĐ</p>
             </div>
+            </div>
+
+            <div class="bill-accept" style="margin-top: 20px;">
+              <p>TỔNG THANH TOÁN: 3.600.00 VNĐ</p>
+              <button type="submit" class="btn btn-primary">THANH TOÁN</button>
+              <button type="submit" class="btn btn-secondary">TIẾP TỤC MUA HÀNG</button>
+
+            </div>
+
+          </div>
         </div>
-        </div>
+
       </div>
     </div>
+  </div>
   </div>
 
   <div class="footer-area">

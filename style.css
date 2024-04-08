@@ -521,6 +521,10 @@
     color: #fc6284;
 }
 
+.like-buttons.active {
+    color: #fc6284;
+}
+
 .sneaker-buttons .is-liked {
     background-color: #fc6284;
     color: white;
@@ -829,4 +833,145 @@
 .banner-register .hover .primary-btn:hover {
     background-position: right center;
     background-size: 200% auto;
+}
+
+
+.login-area {
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+    position: relative;
+    background-color: #fff;
+}
+
+.cart-area {
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+    position: relative;
+    background-color: #fff;
+}
+
+
+.cart-body img {
+    width: 50%;
+}
+
+.cart-inner th {
+    padding: 20px;
+}
+
+.cart-inner th, tr {
+    border-color: transparent;
+}
+
+.cart-body tr td {
+    vertical-align: middle;
+    font-weight: 900;
+}
+
+.cart-body .input-group {
+    width: 50%;
+}
+
+.cart-body .input-group input[name="quantity"] {
+    text-align: center;
+}
+
+.cart-body .input-group button {
+    border: 1px solid rgba(0,0,0,.09);
+}
+
+.nav-cart {
+    position: relative;
+}
+
+.nav-cart #product_count {
+    position: absolute;
+    font-size: 8px;
+    top: -10px;
+    right: -10px;
+    color: white;
+    background-color: red;
+    padding: 2px 5px;
+    border-radius: 50%;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.cart-items {
+    padding: 40px;
+    margin-left: 10px;
+    border-bottom: 0.5px solid #78827e;
+}
+
+.cart-items img {
+    width: 30%;
+}
+
+
+.cart-items .input-group {
+    width: 30%;
+}
+
+.cart-items .input-group input[name="quantity"] {
+    text-align: center;
+}
+
+.cart-items .input-group button {
+    border: 1px solid rgba(0,0,0,.09);
+}
+
+.cart-items .sneaker-price {
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    color: #38B6FF;
+    transition: all 0.3s ease 0s;
+    background-color: #dfdfdf;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 768px){
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: 0;
+    }
+
+    .customNavigation .prev {
+        left: 10px;
+    }
+    
+    .customNavigation .next {
+        right: 10px;
+    }
+
+    .brand-items {
+        width: 32%;
+    }
+
+    .features-area {
+        margin-top: 80px;
+    }
+    .news-area .news-item-big > p {
+        font-size: 48px;
+    }
+    .news-area .news-item-small > p {
+        font-size: 36px;
+    }
+
+    .product-area .sneaker-card {
+        width: 100%;
+    }
+    .sneaker-info .sneaker-amount .input-group {
+        width: 45%;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
 }

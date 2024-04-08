@@ -42,15 +42,25 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./shop/shop.html">GIỚI THIỆU</a>
+                <a class="nav-link" href="#">GIỚI THIỆU</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">LIÊN HỆ</a>
+              </li>
+              <li class="nav-item mobile-nav">
+                <a class="nav-link" href="../login.html">ĐĂNG NHẬP</a>
+              </li>
+              <li class="nav-item mobile-nav">
+                <a class="nav-link" href="../cart.html">GIỎ HÀNG</a>
               </li>
             </ul>
             <ul class="nav-right">
               <li>
-                <a href=""><i class="fa-solid fa-user"></i></a>
+                <a href="../login.html"><i class="fa-solid fa-user"></i></a>
               </li>
               <li>
-                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="../cart.html" class="nav-cart"><i class="fa-solid fa-cart-shopping"></i>
+                <span id="product_count">1</span></a>
               </li>
             </ul>
           </div>
@@ -150,10 +160,10 @@
                 <div class="col-lg-4">
                   <div class="form-floating">
                     <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                      <option selected>Theo khoảng giá</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
+                      <option selected>Khoảng giá: Thấp đến cao</option>
+                      <option value="1">Khoảng giá: Cao đến thấp</option>
+                      <option value="2">Theo tên</option>
+                      <option value="3">Theo độ phổ biến</option>
                     </select>
                     <label for="floatingSelect">Sắp xếp</label>
                   </div>
@@ -319,6 +329,7 @@
 
   <script src="../js/jquery-3.7.1.min.js"></script>
   <script src="../js/index.js"></script>
+  <script src="../js/popper.min.js"></script>
   <script src="../boostrap/js/bootstrap.min.js"></script>
   <script src="../owlcarousel/owl.carousel.min.js"></script>
 </body>

@@ -33,6 +33,12 @@ $(document).ready(function () {
                 items: 1
             },
             768: {
+                items: 2,
+            },
+            820: {
+                items: 2,
+            },
+            992: {
                 items: 4,
             }
         }
@@ -110,6 +116,8 @@ $(document).ready(function () {
     }
 
     loadPage(currentPage);
+
+    
     $('input[name="btnradio_page"]').change(function () {
         const selectedPageId = $('input[name="btnradio_page"]:checked').attr('id');
         const selectedPage = selectedPageId.replace('btnradio', '');
@@ -128,12 +136,11 @@ $(document).ready(function () {
         });
     });
 
-    let product_count = 1
+    let product_count = 2
     cartButtons.forEach(button => {
         button.addEventListener('click', (event) => {
             event.preventDefault();
             let imgtodrag = $(button).closest('.sneaker-card').find("img");
-            console.log(imgtodrag)
             if (imgtodrag.length) {
                 let cart = $(".nav-right .fa-cart-shopping");
                 let imgclone = imgtodrag.clone()
@@ -172,10 +179,33 @@ $(document).ready(function () {
         });
     });
 
+
+
     // Toggle chat box
     $('#chat-box-toggle').click(function () {
         $('.chat-box').slideToggle();
+        $('#chat-box-toggle').slideToggle();
     });
+
+    $("#close-chat").click(function(){
+        $('.chat-box').slideToggle();
+        $('#chat-box-toggle').slideToggle();
+    })
+    
+    $('.owl-carousel').owlCarousel({})
+
+    const answer = {
+        [1]: "CT Sneaker hoàn toàn miễn phí ship bạn nhé.",
+        [2]: "Hiện đang có chương trình sale diễn ra.",
+        [3]: "Lầu 9, 123 Nguyễn Đình Chiểu, P.6, Q. 3, TP.HCM.",
+    }
+
+    $(".send-question").click(function(){
+        const answerId = $(this).data("question")
+        $(".chat-box-content").append(sendChat(answer[answerId], "incoming"))
+        $(".quick-question").slideToggle()
+    })
+
 
     const sendChat = (message, className) => {
         const chatMessage = document.createElement("li")

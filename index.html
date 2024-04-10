@@ -15,6 +15,7 @@
 </head>
 
 <body>
+
   <div class="sticky-wrapper">
     <div class="main_menu">
       <nav class="navbar navbar-expand-lg lct_navbar">
@@ -72,7 +73,7 @@
 
   <div class="banner-area">
     <div class="container">
-      <div class="row fullscreen align-items-center justify-content-start" style="height: 742px;">
+      <div class="row align-items-center justify-content-start" style="height: 742px;">
         <div class="col-lg-12" style="margin-top: 160px;">
           <div class="banner-slider owl-carousel owl-theme">
             <div class="row single-slide align-items-center d-flex">
@@ -88,7 +89,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-7">
+              <div class="col-lg-7 col-md-6">
                 <div class="banner-img">
                   <img class="img-fluid" src="./img/slider/slider1.png" alt="">
                 </div>
@@ -109,7 +110,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-7">
+              <div class="col-lg-7 col-md-6">
                 <div class="banner-img">
                   <img class="img-fluid" src="./img/slider/slider2.png" alt="">
                 </div>
@@ -129,7 +130,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-7">
+              <div class="col-lg-7 col-md-6">
                 <div class="banner-img">
                   <img class="img-fluid" src="./img/slider/slider3.png" alt="">
                 </div>
@@ -364,11 +365,13 @@
 
   <div class="chat-box">
     <h2>Hổ trợ</h2>
+    <span id="close-chat"><i class="fa-solid fa-circle-xmark"></i></span>
     <ul class="chat-box-content">
-      <li class="chat incoming">
-        <i class="fa-solid fa-headset"></i>
-        <p>Xin chào! Bạn có đang cần trợ giúp?</p>
-      </li>
+      <div class="quick-question">
+        <p class="send-question" data-question="1">Shop mình có miễn phí ship không?</p>
+        <p class="send-question" data-question="2">Hiện shop có đang sale không?</p>
+        <p class="send-question" data-question="3">Địa chỉ shop ở đâu?</p>
+      </div>
     </ul>
     <div class="chat-input">
       <textarea placeholder="Nhập tin nhắn..."></textarea>
@@ -385,15 +388,16 @@
   <script src="./clock_assets/flipclock.js"></script>
   <script type="text/javascript">
     $(function () {
+      // TÙY CHỈNH NGÔN NGỮ
       FlipClock.Lang.Custom = { hours: 'GIỜ', minutes: 'PHÚT', seconds: 'GIÂY' };
+      
       var opts = {
-        clockFace: 'HourCounter',
-        countdown: true,
-        language: 'Custom'
+        clockFace: 'HourCounter', // KIỂU ĐẾM NGƯỢC GIỜ 
+        countdown: true,          // CÓ ĐẾM NGƯỢC
+        language: 'Custom'        // SỬ DỤNG NGÔN NGỮ TÙY CHỈNH
       };
-      var countdown = 1711740480 - ((new Date().getTime()) / 1000); // from: 03/30/2024 02:28 am +0700
-      countdown = Math.max(1, countdown);
-      $('.clock-builder-output').FlipClock(countdown, opts);
+      // HIỂN THỊ ĐỒNG HỒ ĐẾM NGƯỢC
+      $('.clock-builder-output').FlipClock(opts);
     });
   </script>
 </body>

@@ -76,7 +76,7 @@
         <div class="row"
           style="margin-top: 160px;background-color: #fff;box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); padding: 0;">
           <div class="col-lg-7">
-            <h3 style="padding: 20px;">GIỎ HÀNG CỦA BẠN (2)</h3>
+            <h3 style="padding: 20px; font-weight: 900;">GIỎ HÀNG CỦA BẠN (2)</h3>
             <div class="row cart-items align-items-center">
               <img src="./img/sneaker/adidas_adifomq.png" alt="" id="sneaker_cart_1">
               <div class="cart-items-info" style="width: 50%;">
@@ -103,7 +103,7 @@
           </div>
           <div class="col-lg-5"
             style="font-weight: 900; border-left: 0.5px solid grey; padding: 0 20px; padding-bottom: 40px; text-align: center;">
-            <h3 style="padding: 20px;">THÔNG TIN THANH TOÁN</h3>
+            <h3 style="padding: 20px; font-weight: 900;">THÔNG TIN THANH TOÁN</h3>
             <form class="row align-items-center justify-content-center"
               style="margin-top: 40px; padding-bottom: 20px;border-bottom:  0.5px solid grey;">
               <div class="col-auto">
@@ -190,11 +190,13 @@
 
   <div class="chat-box">
     <h2>Hổ trợ</h2>
+    <span id="close-chat"><i class="fa-solid fa-circle-xmark"></i></span>
     <ul class="chat-box-content">
-      <li class="chat incoming">
-        <i class="fa-solid fa-headset"></i>
-        <p>Xin chào! Bạn có đang cần trợ giúp?</p>
-      </li>
+      <div class="quick-question">
+        <p class="send-question" data-question="1">Shop mình có miễn phí ship không?</p>
+        <p class="send-question" data-question="2">Hiện shop có đang sale không?</p>
+        <p class="send-question" data-question="3">Địa chỉ shop ở đâu?</p>
+      </div>
     </ul>
     <div class="chat-input">
       <textarea placeholder="Nhập tin nhắn..."></textarea>

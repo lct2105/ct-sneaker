@@ -13,7 +13,7 @@ window.addEventListener("scroll", function () {
 $(document).ready(function () {
     $(".banner-slider").owlCarousel({
         items: 1,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 3000,
         loop: true,
         dots: true

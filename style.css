@@ -1113,9 +1113,22 @@
     color: #38B6FF;
 }
 
+
+@media only screen and (max-width: 1200px){
+    .product-area .sneaker-card {
+        width: 46%;
+    }
+}
+
 @media only screen and (max-width: 1024px){
     .product-area .sneaker-card {
         width: 46%;
+    }
+    .news-area .news-item-big > p {
+        font-size: 48px;
+    }
+    .news-area .news-item-small > p {
+        font-size: 36px;
     }
 }
 
@@ -1192,3 +1205,12 @@
     }
 }
 
+
+@media only screen and (max-width: 280px){
+    .footer-area img {
+        width: 150px;
+    }
+    .product-area { 
+        padding: 0;
+    }
+}

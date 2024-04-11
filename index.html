@@ -408,8 +408,10 @@
         countdown: true,          // CÓ ĐẾM NGƯỢC
         language: 'Custom'        // SỬ DỤNG NGÔN NGỮ TÙY CHỈNH
       };
+      var countdown = 1712903700 - ((new Date().getTime())/1000);
+	    countdown = Math.max(1, countdown);
       // HIỂN THỊ ĐỒNG HỒ ĐẾM NGƯỢC
-      $('.clock-builder-output').FlipClock(opts);
+      $('.clock-builder-output').FlipClock(countdown, opts);
     });
   </script>
 </body>

@@ -1113,6 +1113,28 @@
     color: #38B6FF;
 }
 
+@media only screen and (max-width: 1024px){
+    .product-area .sneaker-card {
+        width: 46%;
+    }
+}
+
+@media only screen and (max-width: 820px){
+    .product-area .sneaker-card {
+        width: 45%;
+    }
+    .brand-items {
+        width: 32%;
+    }
+    .mobile-nav {
+        display: block;
+    }
+
+    .nav-right {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 768px){
     .owl-theme .owl-nav.disabled+.owl-dots {
         margin-top: 0;
@@ -1164,17 +1186,9 @@
     }
 }
 
-@media only screen and (max-width: 820px){
-    .product-area .sneaker-card {
-        width: 45%;
-    }
-    .brand-items {
-        width: 32%;
-    }
-}
-
 @media only screen and (max-width: 556px){
     .product-area .sneaker-card {
         width: 100%;
     }
 }
+
